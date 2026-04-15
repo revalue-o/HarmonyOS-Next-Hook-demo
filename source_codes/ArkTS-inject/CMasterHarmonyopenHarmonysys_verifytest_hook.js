@@ -1,0 +1,1 @@
+console.log("Hello from Frida\!"); Process.enumerateModules().forEach(function(m) { if (m.name.indexOf("entry") \!== -1 || m.name.indexOf("location") \!== -1) console.log(m.name + " @ " + m.base); });
